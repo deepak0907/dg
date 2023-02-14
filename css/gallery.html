@@ -26,8 +26,10 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: flex-start;
-            justify-content: center;
-            background-color: blanchedalmond;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            
         }
 
         h1 {
@@ -35,6 +37,20 @@
             padding: 0;
             background-color: aquamarine;
             font-size: 1.3rem;
+            white-space: nowrap;
+        }
+        .head i {
+            padding: .5rem;
+        }
+        a{
+            width: 8rem;
+            padding: .5rem;
+            background-color: #000;
+            color: aliceblue;
+            border-radius: 3px;
+            border: none;
+            text-align: center;
+
         }
         
     </style>
@@ -47,6 +63,9 @@
                 <h1>Lorem, ipsum dolor.</h1>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deserunt eveniet cumque possimus officiis nesciunt totam, architecto provident libero fugiat. Optio nobis corporis odit culpa beatae deserunt! Tempore, laboriosam ipsa!</p>
+        <a>
+           read more <i class="fa-solid fa-arrow-right"></i>
+        </a>
         </div>
         <div class="card">
             <div class="head">
