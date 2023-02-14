@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more form elements</title>
+</head>
+<body>
+    <form method="post">
+    <select name="eduction">
+        <option selected disabled>Choose Your eduction</option>
+        <option value="N">none</option>
+        <option value="H">High School</option>
+        <option value="C">College</option>
+        <option value="M">Masters</option>
+        <option value="P">Phd</option>
+    </select>
+        
+    <Select name="Food" multiple>
+        <option value="B">Burger</option>
+        <option value="F">fries</option>
+        <option value="S">Shake</option>
+    </Select>
+        <div>
+            <label for="movie">Select a Movie</label>
+       <input type="text" name="movie" list="movies" id="movie">
+       <datalist id="movies">
+            <option value="Stae Wars"></option>
+            <option value="Avengers"></option>
+            <option value="Black Panther"></option>
+
+       </datalist>
+        </div>
+    </form>
+</body>
+</html>

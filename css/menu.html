@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple menu</title>
+    <style>
+        /* rest*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main-menu{
+            background-color: antiquewhite;
+            padding: 1rem;
+        }
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        /* only .nav-item class belonging to .menu parent will have this setting */
+        .menu>.nav-item{
+            background: crimson;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: burlywood;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+        .menu .nev-item .nav-link{
+            text-decoration:none;
+            color: black;
+            cursor: pointer;
+        }
+        .menu .nav-item:hover{
+            background-color: rgb(213, 226, 97);
+            box-shadow: 0 0 .5rem black;
+        }
+        #main-menu2{
+           
+            width: 100%;
+            padding: 1rem;
+            height: 20rem;
+            background-color: black;
+        }
+        #main-menu2 .nav-item{
+            background-color: transparent;
+            font-size: 1rem;
+        }
+        #main-menu2 .nav-link{
+            color: aliceblue0;
+
+        }
+        #main-menu2 .menu{
+
+        }
+        .section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .cardsimg{
+            width: 350px;
+            aspect-ratio: 1/1;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="main-menu">
+        <ul class="menu">
+            <li class="nav-item"><a href="#" class="nav-link">Lorem.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Illo!</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sunt?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Architecto?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Inventore?</a></li>
+        </ul>
+    </nav>
+        <div class="section">
+            <div class="cards">
+                <img src="https://images.unsplash.com/photo-1675851816504-41e2afc1efb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80" alt="">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+            </div>
+            <div class="cards">
+                <img src="https://images.unsplash.com/photo-1675851816504-41e2afc1efb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80" alt="">
+                <h2>Inventore illum atque dolorum dicta.</h2>
+            </div>
+            <div class="cards">
+                <img src="https://images.unsplash.com/photo-1675851816504-41e2afc1efb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80" alt="">
+                <h2>Exercitationem repudiandae quo numquam at?</h2>
+            </div>
+            <div class="cards">
+                <img src="https://images.unsplash.com/photo-1675851816504-41e2afc1efb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80" alt="">
+                <h2>Illum nisi rem cum est!</h2>
+            </div>
+            <div class="cards">
+                <img src="https://images.unsplash.com/photo-1675851816504-41e2afc1efb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80" alt="">
+                <h2>Dolores beatae molestias maiores assumenda?</h2>
+            </div>
+            <div class="cards">
+                <img src="https://images.unsplash.com/photo-1675851816504-41e2afc1efb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80" alt="">
+                <h2>Aliquid natus consequuntur voluptatibus rem.</h2>
+            </div>
+        </div>
+    <nav id="main-menu2">
+        <ul class="menu">
+            <li class="nav-item"><a href="#" class="nav-link">Lorem.</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Illo!</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sunt?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Architecto?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Inventore?</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
