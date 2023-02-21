@@ -1,3 +1,9 @@
+
+:root{
+    --font-size-basic: 1.4rem;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -21,13 +27,13 @@ header img {
     width: 200px;
 }
 .infomsg span{
-    font-size: 1.5rem;
+    font-size: var(--font-size-basic);
     font-family: calibri;
 
 }
 .infomsg a{
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: var(--font-size-basic);
     font-family: monospace;
     letter-spacing: -1px;
 }
@@ -93,11 +99,91 @@ main{
     font-size: 1.2rem;
     font-weight: bold;
     text-shadow: none;
-
-
 }
 .btn:hover{
     background-color: rgb(26, 23, 216);
     color: white;
     border: 1px solid rgb(111, 8, 172);
 }
+.form-card{
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 3px 3px rgb(189, 120, 120);
+}
+.form-card h2{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+.form-control label{
+    color: blue;
+    font-size: 1.2rem;
+    font-family: monospace;
+
+}
+.form-control label span{
+    color: rgb(129, 22, 22);
+    font-weight: bold;
+}
+ .form-control input{
+    padding: .5rem 1rem;
+    border: 1px solid rgb(167, 163, 163);
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-family: calibri;
+    margin-top: .5rem;
+ }
+ hr{
+    margin: 1.5rem 0;
+    border: 1px solid rgb(182, 176, 176);
+ }
+ .btn-login{
+    background-color: blue;
+    color: white;
+    padding: .75rem;
+
+ }
+ .btn-login:hover{
+    background-color: blueviolet;
+
+ }
+ .text-link{
+    color: rgb(92, 92, 163);
+    font-family: monospace;
+    font-size: 1.2rem;
+ }
+ /* media query */
+ @media screen and (max-width:500px) {
+    main{
+    flex-direction: column-reverse;
+    justify-content: center;
+    }
+    .left .right{
+        width: 100%;
+    }
+    .left{
+        padding: 1rem;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
